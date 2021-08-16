@@ -1,0 +1,23 @@
+1. What type of string does the following regular expression match? ^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$
+
+2. Which is not a method of the timeit module?
+
+3. When using the unittest module, what class should your test classes extend?
+
+4. Which of the following are UTF-8 characters that create confusables for "Guido"?
+
+5. In the Quiz Code IPython notebook in the PYT211-exam folder, in the cell under the Database header, you will find a query that gets the maximum number of homeruns hit in a season by a player under a specified weight. The weight must be passed in as a parameter. Using the lahman2014.sqlite database and without changing the string in the query variable, write code to find out the maximum number of homeruns hit by a player who weighs less than 175 pounds.
+
+6. What benefit does a defaultdict provide that a standard dict does not?
+
+7. In Europe, the day goes before the month. In the USA, the month goes before the day. Does this regex match a European of American date? ^(0?[1-9]|1[012])/(0?[1-9]|[12][0-9]|3[01])/(19|20)?[0-9]{2}$
+
+8. Write a find_super_strings(s) function that takes string s as an argument and returns an alphabetized list of distinct words that contain other words at least three-letters long that are also found in s. The function should be case-insensitive and the list returned should return all uppercase words. For example, if find_super_strings('All day yesterday, John and Johnny threw an orange ball around the baseball field.') would return the following list:
+
+	['BALL', 'BASEBALL', 'JOHNNY', 'YESTERDAY']
+	
+The word 'AN' is not included even though it is found in 'ORANGE' because it only has two letters. Also, notice that YESTERDAY does not have a trailing comma in the result. You will have to split words on non-word characters. You can use the following regular expression to do this: '[\W]+'
+
+Once your function is written, pass the contents of the 'casey-at-the-bat.txt' file to it. How long is the list that is returned?
+
+9. Which is more efficient: sum( (1,2,3,4,5) ) or sum( {'a':1, 'b':2, 'c':3, 'd':4, 'e':5}.values() )?

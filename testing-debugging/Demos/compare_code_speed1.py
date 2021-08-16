@@ -1,0 +1,19 @@
+import random
+import time
+
+start_time = time.perf_counter()
+numbers = str(random.randint(1,100))
+for i in range(1000):
+    num = random.randint(1,100)
+    numbers += ',' + str(num)
+end_time = time.perf_counter()
+td1 = end_time - start_time
+
+numbers = [start_time = time.perf_counter()
+str(random.randint(1,100)) for i in range(1,1000)]
+numbers = ', '.join(numbers)
+end_time = time.perf_counter()
+td2 = end_time - start_time
+
+print('''Time Delta 1: {}
+Time Delta 2: {}'''.format(td1, td2))
